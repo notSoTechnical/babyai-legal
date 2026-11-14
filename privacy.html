@@ -13,10 +13,10 @@
 </head>
 <body>
 <h1>Baby AI Assistant — Privacy Policy</h1>
-<p class="eff">Effective: November 12, 2026 · Annizon · Contact: info@annizon.com</p>
+<p class="eff">Effective: November 13, 2026 · Annizon · Contact: info@annizon.com</p>
 
 <h2>The short version</h2>
-<p>Baby AI Assistant keeps your family's baby-care log <strong>on your device</strong>. There are <strong>no accounts</strong> — you never sign up or sign in — and in this version <strong>we do not operate a server copy of your log</strong>. We show <strong>no advertising</strong>, do <strong>no cross-app tracking</strong>, and <strong>never sell data</strong>. The only time anything leaves your phone is listed below: purchases are handled by Apple and RevenueCat, and if you tap to generate an AI summary or send a chat message, a small structured extract of your log is sent to create that summary or answer.</p>
+<p>Baby AI Assistant keeps your family's baby-care log <strong>on your device</strong> by default. There are <strong>no email or password accounts</strong> — you never sign up or sign in. We show <strong>no advertising</strong>, do <strong>no cross-app tracking</strong>, and <strong>never sell data</strong>. The only times anything leaves your phone are listed below: if you create or join a <strong>family</strong> with an invite code, the family's shared log syncs to our server so the people you invite can see and add to it; purchases are handled by your app store and RevenueCat; and if you use an AI feature — voice logging, a summary, or a chat message — the audio or a small structured extract of your log is sent to create the result.</p>
 
 <h2>What the app stores on your device</h2>
 <ul>
@@ -27,14 +27,24 @@
   <li>App settings, such as your units (metric or imperial).</li>
   <li>A clearly labeled <strong>SAMPLE</strong> demo family, so you can see how the app works before entering anything real.</li>
 </ul>
-<p>All of this stays in the app's storage on your phone. Deleting the app deletes it.</p>
+<p>All of this stays in the app's storage on your phone. Deleting the app deletes it. The only exception is Family Sync, and only if you choose to use it:</p>
 
-<h2>AI features — summaries and chat</h2>
-<p>The app can turn your own log into plain-language summaries (for example, how feeding and sleep looked over the last two weeks), and it includes an AI chat assistant you can ask questions about your log in plain language. These are the only features that use our server, and only when <strong>you tap to generate a summary or send a chat message</strong>:</p>
+<h2>Family Sync — optional, off until you join a family</h2>
+<p>If you use the app on your own, your log is <strong>not</strong> stored on our server at all. If you create a family, or join one with its invite code, the app syncs the family's shared log to our server so every member sees the same record:</p>
 <ul>
-  <li>A <strong>minimized, structured extract</strong> of the log is sent over HTTPS to our backend, which passes it to our AI provider solely to generate the summary or chat answer. The extract contains entry types, times, amounts, recent entries, and your child's age in months — <strong>no photos</strong> (the app does not collect photos of your child). When you chat, your question is sent along with the extract, solely so the assistant can answer it.</li>
-  <li>The extract and your question are used only to produce your summary or answer. They are <strong>not sold, not used for advertising, and not retained beyond processing</strong>.</li>
-  <li>If you never generate a summary or send a chat message, nothing is sent.</li>
+  <li><strong>What syncs:</strong> the shared family log — child profiles, care entries, growth measurements, and vaccination records — the same things listed above.</li>
+  <li><strong>When:</strong> only after you create or join a family. Joining is always your choice, using the family's invite code.</li>
+  <li><strong>Who can see it:</strong> only the family members who joined with that invite code — the people you invite. Members can read the shared log, and caregivers in the family can add to it.</li>
+  <li><strong>Identity, still without accounts:</strong> there is still no email, username, or password. Your install is identified by a random member ID the app creates on your device, plus a member credential our server issues to that install; the server stores only a hash of the credential.</li>
+</ul>
+
+<h2>AI features — voice logging, summaries and chat</h2>
+<p>The app can log an entry from your voice, turn your own log into plain-language summaries (for example, how feeding and sleep looked over the last two weeks), and it includes an AI chat assistant you can ask questions about your log in plain language. These features use our server only when <strong>you choose to use them</strong> — recording a voice log, tapping to generate a summary, or sending a chat message. The processing runs on our backend with Google's Gemini AI:</p>
+<ul>
+  <li><strong>Voice logging:</strong> when you record a spoken entry, the audio is sent over HTTPS to our backend, which passes it to Google Gemini to transcribe and structure. You get back a <strong>draft entry to review first</strong> — nothing is saved to your log until you confirm it.</li>
+  <li>A <strong>minimized, structured extract</strong> of the log is sent over HTTPS to our backend, which passes it to Google Gemini solely to generate the summary or chat answer. The extract contains entry types, times, amounts, recent entries, and your child's age in months — <strong>no names</strong>, and <strong>no photos</strong> (the app does not have photos at all). When you chat, your question is sent along with the extract, solely so the assistant can answer it.</li>
+  <li>Your voice audio, the extract and your question are used only to produce your draft, summary or answer. They are <strong>not sold, not used for advertising, and not retained beyond processing</strong>.</li>
+  <li>If you never use these features, nothing is sent.</li>
   <li>Summaries and chat answers are <strong>educational information drawn from your own records</strong> — they are not medical advice, and the app does not diagnose anything. See the Terms of Use.</li>
 </ul>
 
@@ -42,16 +52,16 @@
 <ul>
   <li>No advertising, no ad trackers, no cross-app tracking, and no data selling — ever.</li>
   <li>No analytics SDKs. The only usage information we can see is the anonymous, aggregate statistics Apple provides to all developers (for example, total installs and crash counts); it is not linked to you or your child.</li>
-  <li>No diagnosis. Baby AI Assistant is an organizational and educational tool for caregivers; it is not a medical device, and we are not a healthcare provider. We do not claim HIPAA compliance; instead, the app is designed so that your family's records stay on your own device in the first place.</li>
+  <li>No diagnosis. Baby AI Assistant is an organizational and educational tool for caregivers; it is not a medical device, and we are not a healthcare provider. We do not claim HIPAA compliance; instead, the app keeps your family's records on your own device by default, and syncs them to our server only if you choose Family Sync.</li>
 </ul>
 
 <h2>Purchases</h2>
-<p>Subscriptions are sold by Apple through the App Store and managed for us by RevenueCat. We receive subscription status (which plan, whether it is active) — never your card details. Purchases are linked to your Apple ID by Apple and RevenueCat, not to any account in this app, because the app has no accounts.</p>
+<p>Subscriptions are sold through the Apple App Store or Google Play and managed for us by RevenueCat. We receive subscription status (which plan, whether it is active) — never your card details. Purchases are linked to your store account (your Apple ID or Google account) by the store and RevenueCat, not to any account in this app, because the app has no accounts.</p>
 
 <h2>Children</h2>
 <p>Baby AI Assistant is made <strong>for adults</strong> — parents and other caregivers — who record information about the children in their care. It is <strong>not directed at children</strong>, and children do not create accounts or use the app themselves. Only record information about a child if you are that child's parent or guardian, or have the parent's or guardian's permission.</p>
 
 <h2>Your choices &amp; contact</h2>
-<p>Your data lives on your device, under your control. You can erase everything at any time with <strong>"Delete all my data" in the app's Settings</strong>, or by deleting the app itself. Questions or requests: <strong>info@annizon.com</strong>. If this policy changes, the new version will be posted at this URL with a new effective date.</p>
+<p>Your data is under your control. In the app's Settings, under <strong>Danger zone</strong>, <strong>"Delete my account &amp; data"</strong> erases your family membership on our server (if you joined a family) and then everything on this device; <strong>"Delete all my data (device only)"</strong> erases just this device. Deleting the app also removes its on-device data. You can also request deletion by email — see our <a href="delete-account.html">account &amp; data deletion page</a> for both paths. Questions or requests: <strong>info@annizon.com</strong>. If this policy changes, the new version will be posted at this URL with a new effective date.</p>
 </body>
 </html>
